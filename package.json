@@ -19,5 +19,9 @@
   "homepage": "https://github.com/DanRoss88/json_the_cat#readme",
   "dependencies": {
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "typescript-eslint": "0.0.1-alpha.0"
   }
 }
