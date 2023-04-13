@@ -10,8 +10,9 @@ const breedFetcher = (breed) => {
       console.log(`Request failed ${error}`);
       return;
     }
+    console.log('statusCode:', response && response.statusCode);
     const data = JSON.parse(body);
-
+  
     if (data.length === 0) {
       console.log(`${breed} is not found`);
       return;
@@ -22,3 +23,5 @@ const breedFetcher = (breed) => {
   });
 };
 breedFetcher();
+
+module.exports = { breedFetcher };
